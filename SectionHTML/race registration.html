@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race registration</title>
+</head>
+
+<body>
+    <h1>Race Registration!!</h1>
+
+    <form action="/dummy">
+        <!-- first name -->
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" required>
+        <!-- last name -->
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name" required>
+
+        <h2>Select a race:</h2>
+        <div>
+            <input type="radio" name="select_race" id="fun_run" value="fun_run">
+            <label for="fun_run">Fun run 5K</label>
+        </div>
+        <div>
+            <input type="radio" name="select_race" id="half" value="half">
+            <label for="half">Half marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="select_race" id="full" value="full">
+            <label for="full">Full marathon</label>
+        </div>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <div>
+            <label for="age_group">Select age group</label>
+            <select name="age_group" id="age">
+                <option value="under 18" selected>Under 18</option>
+                <option value="between 18 and 30">Between 18 and 30</option>
+                <option value="between 30 and 40">Between 30 and 40</option>
+                <option value="above 40">Above 40</option>
+            </select>
+        </div>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>
